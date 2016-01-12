@@ -4,7 +4,7 @@ Third try is the charm.
 This is a third attempt to figure out the workflow for Git and Github.
 Three words to look up in the glossary are Branch, Clone, and Fork.
 
-Note that the master file all live "in the cloud" on the Github server, that we access through the web.
+Note that the master files all live "in the cloud" on the Github server, that we access through the web.
 When collaborating, if you want to make changes, you should create a "branch" which is like a copy of the files,
 that you can play with and change at will. (Without affecting the master files). Then you make a "pull" request
 to the system, so the owner guy (HEAD?) can decide whether to merge your changes from your branch back into the master files.
