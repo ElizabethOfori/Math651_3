@@ -34,4 +34,13 @@ It took a surprising long time to complete, but eventually it did complete, and 
 ----------------
 Now, how do I get files from the server onto my local copy?
 
--- first, I will create a simple text file on the remote server using github.com
+-- first, I will create a simple text file on the remote server using github.com (called ATextFile). Commit it, of course. 
+
+-- then I enter one command on the laptop, to move the new stuff onto the laptop. The command is
+
+  git pull
+  
+That was it. It brought in the new file, and also updated the README file because I was editting it on the remote server.
+
+All this information is available in a really nice instruction set here: http://rogerdudler.github.io/git-guide/
+I recommend reading all of it. 
