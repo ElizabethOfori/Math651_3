@@ -14,3 +14,17 @@ We also want to work locally (on our own computer) on these files. Create a bran
 I don't see why you can't use the "cloud" repository directly from the computer. You can make little edits from the browser (on github.com) but that seems pretty limited. 
 
 Anyhow, let's try this out. 
+
+-----------------
+Well, I'm not sure I understood that. I cloned the GitHub repository onto my laptop using the command:
+   git clone https://github.com/mlamoureux/Math651_3.git
+Then I added a .pdf file into the new folder that was created in my laptop. 
+To get that loaded onto the remote server, I had to issue three commands on the laptop
+   git add *
+   git commit -m "adding the .pdf file, I hope"
+   git push origin master
+It took a surprising long time to complete, but eventually it did complete, and now the .pdf file is on the remote server.
+
+----------------
+Now, how do I get files from the server onto my local copy?
+-- first, I will create a simple text file on the remote server using github.com
