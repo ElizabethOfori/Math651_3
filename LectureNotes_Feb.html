@@ -255,6 +255,47 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lecture-4---Wednesday,-February-3">Lecture 4 - Wednesday, February 3<a class="anchor-link" href="#Lecture-4---Wednesday,-February-3">&#182;</a></h1><p>The students are asking for some code to do financial market simulations, using stochastic processes. Rather than re-invent the wheel, I borrowed some code from Stuart Gordon Reid, who has a webpage describing various financial models.
+<a href="http://www.turingfinance.com/random-walks-down-wall-street-stochastic-processes-in-python/">http://www.turingfinance.com/random-walks-down-wall-street-stochastic-processes-in-python/</a></p>
+<p>His Python code is available on GitHub, here:
+<a href="https://github.com/StuartGordonReid/Python-Notebooks">https://github.com/StuartGordonReid/Python-Notebooks</a></p>
+<p>I forked a copy of his iPython notebook and put it into our repository, in our Python Code folder. It is called:
+Stochastic Process Algorithms.ipynb</p>
+<p>The code runs fine, except I had to add the comment "%matplotlib inline" at the first line of the first cell in the notebook. This allows the graphics to plot in the notebook.</p>
+<p>The variable "paths" sets the number of different random trials that will run. It is currently set at 15, to get reasonably looking plots. To get a good sample or runs, you might need to set this to a 1000 or more.</p>
+<p>Model parameters are set to some standard values for initial asset price, length of time of the simulation, interest rates, standard deviations for diffusion, jumps, etc.</p>
+<p>There is sample code for</p>
+<ul>
+<li>Brownian motion</li>
+<li>Geometric Brownian motion (which is more realistic for modeling stock prices)</li>
+<li>Merton Jump Diffusion (which allows for sudden jumps in stock prices)</li>
+<li>Heston Stochastic Volatility model (which allows for changes in price volatility)</li>
+<li>Cox Ingersoll Ross model (for modelling interest rates over time)</li>
+<li>Ornstein Uhlenbeck (also for interest rates)</li>
+</ul>
+<p>I have no idea if these models are useful, or if the code accurately reflects these theoretical models. I don't do financial math -- so you will have to judge yourself, or test the code appropriately.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
     </div>
   </div>
 </body>
